@@ -26,7 +26,7 @@ const fetchData = async () => {
   loading.value = true;
   try {
     const responce = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${nameCity.value}&limit=5&appid=2f1fb8213a60d59791f85192c8e2bf2a`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${nameCity.value}&limit=5&appid=2f1fb8213a60d59791f85192c8e2bf2a`
     );
     if (!responce.ok) {
       throw new Error("Ошибка");

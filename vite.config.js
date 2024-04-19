@@ -4,8 +4,8 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
+  base: "/WeatherAPIVue/",
   plugins: [vue()],
-  publicPath: process.env.NODE_ENV === "production" ? "/WeatherAPIVue/" : "/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

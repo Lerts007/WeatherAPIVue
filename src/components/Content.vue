@@ -37,7 +37,7 @@ const fetchTemp = async () => {
   loading.value = true;
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&units=metric&appid=2f1fb8213a60d59791f85192c8e2bf2a`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&units=metric&appid=2f1fb8213a60d59791f85192c8e2bf2a`
     );
     if (!response.ok) {
       throw new Error("Ошибка");
