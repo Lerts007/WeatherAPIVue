@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+html {
+  background-color: #8d8d8d;
+}
+.content {
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
